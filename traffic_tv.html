@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Traffic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1486px; /*width of zone on brightauthor*/
+            height: 829px; /*height of zone on brightauthor*/
+            font-family: Arial, sans-serif; /* Specify your desired font family */
+        }
+
+        .section1 {
+            width: 100%;
+            height: 85vh; /* Adjusted height */
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section2 {
+            width: 100%;
+            height: 10vh; /* Adjusted height */
+            background-color: #c3c6f0;
+            text-align:center;
+            padding: 0.02px;
+        }
+
+        .embedded-frame {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove iframe border */
+        }
+
+        .section2 p {
+            font-size: 40px; /* Adjust the font size as needed */
+            color: #000000; /* Change the color as needed */
+            width: auto; /* Allow the text to automatically adjust to the available width */
+            margin-top: 20px; /* Adjust this value to move the text higher or lower */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1 with Embedded URL 
+    "https://www.google.com/maps/@43.6160013,-79.5687305,11.46z/data=!5m1!1e1?entry=ttu" -OLD LINK DOES NOT WORK
+    -->
+    <div class="section1">
+        <iframe src="https://embed.waze.com/iframe?zoom=11&lat=43.616001&lon=-79.575489&ct=livemap" width=100% height=100%></iframe>
+    </div>
+
+    <!-- Section 2 with Message -->
+    <div class="section2">
+        <p>See you next time. Drive home safe :p</p>
+    </div>
+
+</body>
+</html>
+
